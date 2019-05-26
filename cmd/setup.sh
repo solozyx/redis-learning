@@ -2,10 +2,10 @@
 
 # 单机版Redis安装
 mkdir -p /opt/soft
-wget http://download.redis.io/releases/redis-3.0.7.tar.gz
-tar -zxf redis-3.0.7.tar.gz
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar -zxf redis-5.0.5.tar.gz
 # 创建软连接
-ln -s redis-3.0.7 redis
+ln -s redis-5.0.5 redis
 cd redis
 make
 make install
