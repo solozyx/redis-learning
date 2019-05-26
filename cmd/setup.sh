@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# 单机版Redis安装
 mkdir -p /opt/soft
 wget http://download.redis.io/releases/redis-3.0.7.tar.gz
 tar -zxf redis-3.0.7.tar.gz
@@ -8,6 +9,10 @@ ln -s redis-3.0.7 redis
 cd redis
 make
 make install
+
+# 启动Redis
+cd redis
+ls src/ | grep redis-
 redis-server
 redis-cli -h 127.0.0.1 -p 6379
 
